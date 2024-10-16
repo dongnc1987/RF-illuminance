@@ -245,8 +245,8 @@ else:
     contour_opt = ax_main_opt.contourf(XR_opt, YR_opt, E_lux_total_opt, levels=50, cmap='viridis')
     ax_main_opt.set_xlabel("X-axis")
     ax_main_opt.set_ylabel("Y-axis")
-    ax_main_opt.set_xlim([-1.25, 1.25])
-    ax_main_opt.set_ylim([-1.25, 1.25])
+    # ax_main_opt.set_xlim([-1.25, 1.25])
+    # ax_main_opt.set_ylim([-1.25, 1.25])
     ax_main_opt.tick_params(labelbottom=False)
 
     # Line scan along the X-axis (below the main plot)
@@ -254,14 +254,14 @@ else:
     ax_xscan_opt.plot(XR_opt[0, :], center_row_opt, color='blue')
     ax_xscan_opt.set_xlabel("X-axis")
     ax_xscan_opt.set_ylabel("Intensity")
-    ax_main_opt.set_xlim([-1.25, 1.25])
+    # ax_main_opt.set_xlim([-1.25, 1.25])
 
     # Line scan along the Y-axis (to the left of the main plot)
     ax_yscan_opt = fig_opt.add_subplot(gs_opt[0, 0], sharey=ax_main_opt)
     ax_yscan_opt.plot(center_column_opt, YR_opt[:, 0], color='green')
     ax_yscan_opt.set_xlabel("Intensity")
     ax_yscan_opt.set_ylabel("Y-axis")
-    ax_main_opt.set_ylim([-1.25, 1.25])
+    # ax_main_opt.set_ylim([-1.25, 1.25])
     ax_yscan_opt.invert_xaxis()
 
     # Add a color bar for the contour plot
