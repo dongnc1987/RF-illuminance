@@ -29,7 +29,7 @@ elif cal_option == 'Mannual calculation':
 
     theta_lens, efficacy, lx, ly = st.columns(4)
     with theta_lens:
-        theta_lens = st.number_input('Semi-angle at half power (theta_lens) after a LENS', min_value=0.0, max_value=90.0, value=45.0)
+        theta_lens = st.number_input('Semi-angle at half power (theta_lens)', min_value=0.0, max_value=90.0, value=45.0)
     with efficacy:
         efficacy_lm_per_W = st.number_input('Luminous efficacy of LED (lm/W)', min_value=200.0, max_value=1000.0, value=683.0)  # in lumens per watt
     with lx:
@@ -193,7 +193,7 @@ else:
 
     theta_lens, efficacy, lx, ly = st.columns(4)
     with theta_lens:
-        theta_lens = st.number_input('Semi-angle at half power (theta_lens) after a LENS', min_value=0.0, max_value=90.0, value=45.0)
+        theta_lens = st.number_input('Semi-angle at half power (theta_lens)', min_value=0.0, max_value=90.0, value=45.0)
     with efficacy:
         efficacy_lm_per_W = st.number_input('Luminous efficacy of LED (lm/W)', min_value=200.0, max_value=1000.0, value=683.0)  # in lumens per watt
     with lx:
