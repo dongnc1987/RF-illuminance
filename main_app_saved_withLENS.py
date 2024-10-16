@@ -4,7 +4,7 @@ import streamlit as st
 from matplotlib.gridspec import GridSpec
 import random
 from scipy.optimize import minimize
-from func.calculation_saved_withLENS import *
+from calculation_saved_withLENS import *
 
 # Set the Streamlit page configuration
 st.set_page_config(page_title="Distribution of illuminance by LEDs", layout="wide")
